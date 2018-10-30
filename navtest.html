@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>侧边导航测试</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+			clear: both;
+		}
+		.page{
+			width:100%;
+			height:4000px;
+			background:url("./images/mooc.jpg") center top no-repeat
+			
+		}
+		.nav{
+			width:160px;
+			height:205px;
+			position:fixed;
+			left:0;
+			top:50%;
+			margin-top: -103px;
+			font-family:"微软雅黑";
+		}
+		.nav-li{
+			width:160px;
+			height:aotuo;
+			border-bottom: 1px solid #fff;
+			background:#333;
+			color:#fff;
+			font-size:16px;
+			line-height:40px;
+			text-align:center;
+		}
+		.nav-li ul{
+			width:100%;
+			height:auto;
+			background:#fff;
+			display:none;
+			
+		}
+		.nav-li:hover ul{
+			display: block;
+			
+		}
+		.nav-li ul li{
+			widht:100%;
+			height:40px;
+			border-bottom: 1px dashed #666;
+			list-style:none;
+			color:#333;
+			text-align: center;
+			line-height:40px;
+			cursor: pointer;
+			position:relative;
+		}
+
+		.list-3{
+			width:160px;
+			height: auto;
+			position:absolute;
+			top:0;
+			left:150px;
+			display:none;
+			
+		}
+		
+		.nav-li ul li .list-3.list-hover, .nav-li ul li:hover .list-3{
+			display:block;
+		}
+		.list-3Dom{
+			width: 160px;
+			height: 40px;
+			background:#444;
+			border-bottom:1px solid;
+			line-height:40px;
+			color:#fff;
+		}
+		.list-hover{
+			display:block;
+		}
+	 </style>
+
+</head>
+
+<body>
+	<div class="page">
+		<div class="nav">
+			<div class="nav-li">
+			慕课网标题
+				<ul>
+					<li>
+					二级标题
+						<div class="list-3">
+							<div class="list-3Dom">三级标题</div>
+							<div class="list-3Dom">三级标题</div>
+						</div>
+					</li>
+					<li>二级标题
+						<div class="list-3">
+							<div class="list-3Dom">三级标题</div>
+							<div class="list-3Dom">三级标题</div>
+						</div>
+					</li>
+					<li>二级标题</li>
+					<li>二级标题</li>
+				</ul>
+			</div>
+			<div class="nav-li">
+			慕课网标题
+				<ul>
+					<li>二级标题</li>
+					<li>二级标题</li>
+					<li>二级标题</li>
+					<li>二级标题</li>
+				</ul>
+			</div>
+			<div class="nav-li">
+			慕课网标题
+				<ul>
+					<li>二级标题</li>
+					<li>二级标题</li>
+					<li>二级标题</li>
+					<li>二级标题</li>
+				</ul>
+			</div>
+			<div class="nav-li">
+			慕课网标题
+				<ul>
+					<li>二级标题</li>
+					<li>二级标题</li>
+					<li>二级标题</li>
+					<li>二级标题</li>
+				</ul>
+			</div>
+			<div class="nav-li">
+			慕课网标题
+				<ul>
+					<li>二级标题</li>
+					<li>二级标题</li>
+					<li>二级标题</li>
+					<li>二级标题</li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>

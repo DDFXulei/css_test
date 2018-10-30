@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>child选择器</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+	body{
+		margin: 0;
+		height: 100vh;
+		background-color: skyblue;
+	}
+	.tag-img-container{
+		width:300px;
+		height:800px;
+		position: absolute;
+		left: 16px;
+		top: 175px;
+		float:left;
+	}
+	.tag-img-container i {
+	  width:60px;
+	  height:18px;
+	  margin-right: 5px;
+	  position: absolute;
+	  font-style: normal;
+
+	}
+
+	.tag-img-container i:nth-child(1):after{
+		content:'直降18000';
+		color:#fff;
+		text-align:center;
+		margin-top:10px;
+		font-size:16px;
+		font-weight:200;
+		position:absolute;
+	}
+	.img{
+		width:64px;
+		height:64px;
+		background-color:#FF4D30;
+		border-radius: 15% 15% 30% 30%;
+		position:relative;
+	}
+	.tag1{
+		width:44px;
+		height:14px;
+		background-color:#FF4D30;
+		border:0.1em solid #F0AA08;
+	}
+	.tag1:after{
+		content:'%5首付';
+		color:#FFF;
+		text-align:center;
+		font-size:6px;
+		font-weight:200;
+		position:absolute;
+	}
+	.tag2{
+		width:50px;
+		height:14px;
+		background-color:#FF4D30;
+		border:0.1em solid #F0AA08;
+	}
+	.tag2:after{
+		content:'首付直降';
+		color:#FFF;
+		text-align:center;
+		font-size:6px;
+		font-weight:200;
+		position:absolute;
+	}
+	.tag3{
+		width:50px;
+		height:14px;
+		background-color:#fff;
+		border:0.1em solid #F0AA08;
+	}
+	.tag3:after{
+		content:'极速提车';
+		color:#F0AA08;
+		text-align:center;
+		font-size:6px;
+		font-weight:200;
+		position:absolute;
+	}
+	.tag4{
+		width:37px;
+		height:14px;
+		background-color:transparent;
+		border:0.1em solid #F0AA08;
+	}
+	.tag4:after{
+		content:'准新车';
+		color:#F0AA08;
+		text-align:center;
+		font-size:6px;
+		font-weight:200;
+		position:absolute;
+	}
+	</style>
+</head>
+<body>
+<div class="tag-img-container">
+	<div class="i">
+		
+	</div>
+	<div class="i">
+	</div>
+	<div class="i">
+	</div>
+	<div class="i">
+	</div>
+	<div class="i">
+	</div>
+</div>
+</body>
+</html>
